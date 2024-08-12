@@ -1,0 +1,30 @@
+{
+  "name": "yapitap",
+  "version": "1.0.0",
+  "description": "(youtube api consumpotion and processing)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpjpjp2020org/yapitap.git"
+  },
+  "keywords": [
+    "youtube",
+    "api",
+    "progress",
+    "tracking",
+    "nodejs",
+    "learning"
+  ],
+  "author": "jpjpjp2020",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jpjpjp2020org/yapitap/issues"
+  },
+  "homepage": "https://github.com/jpjpjp2020org/yapitap#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
