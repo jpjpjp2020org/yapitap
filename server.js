@@ -7,7 +7,7 @@ const app = express();
 app.use(json()); // for parsing application/json
 
 import youtubeRoutes from './routes/ytroutes.js';
-app.use('/youtube', youtubeRoutes);
+app.use('/youtube', youtubeRoutes); // mounting the router
 
 const PORT = process.env.PORT || 3003;
 app.listen(PORT, () => {

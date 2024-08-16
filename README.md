@@ -21,5 +21,18 @@ Turning free Youtube resources into trackable courses, similar to UDemy and Cour
 
 ### TODO:
 
+- Use playlist value to group single courses - more of a client side thing!
+- NB - need to receive the 2nd request for progress with duration- so can calc progression!
 - Restrict youtube API key under credentials!
+- client side should show duration on public profile - data integrity
+- handle the logic for going over duration: - DONE
 
+    ```json
+    {
+        "bookmark_url": "https://youtu.be/CgkZ7MvWUAA?t=111114078",
+        "timestamp": 111114078,
+        "progress": "654343.5%"
+    }
+    ```
+- Main point - on client side user can mark complete for already done courses too - unified logic. - DONE
+- consider if need to return a clean url with 2nd request. - NO NEED
