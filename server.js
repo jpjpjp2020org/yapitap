@@ -1,9 +1,9 @@
-const express = require('express');
+import express, { json } from 'express';
 const app = express();
 
-app.use(express.json()); // for parsing application/json
+app.use(json()); // for parsing application/json
 
-const youtubeRoutes = require('./routes/youtube');
+import youtubeRoutes from './routes/youtube';
 app.use('/youtube', youtubeRoutes);
 
 const PORT = process.env.PORT || 3003;
