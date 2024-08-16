@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/jpjpjp2020org/yapitap#readme",
   "dependencies": {
+    "dotenv": "^16.4.5",
     "express": "^4.19.2"
   }
 }

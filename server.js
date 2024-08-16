@@ -1,9 +1,12 @@
 import express, { json } from 'express';
-const app = express();
+import dotenv from 'dotenv';
 
+dotenv.config();
+
+const app = express();
 app.use(json()); // for parsing application/json
 
-import youtubeRoutes from './routes/youtube';
+import youtubeRoutes from './routes/ytroutes.js';
 app.use('/youtube', youtubeRoutes);
 
 const PORT = process.env.PORT || 3003;
