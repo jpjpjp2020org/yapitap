@@ -17,7 +17,8 @@ Turning free Youtube resources into trackable courses, similar to UDemy and Cour
 - "Black box" and "API as the central truth", so the client that consumes the API handles displaying the info, but requires as little calculations and conditional decisions as possible.
 - Focusing on problem at hand, but keeping in mind that API might be expanded into handling other different tasks.
 - Developing specific endpoints and not trying to abstract different Youtube link processing under one unified process, which would make consuming the API by various clients more complex.
-- Focusing on te API getting as much useful info on 1st request from youtube API and sending this back for the client to pass on to db for storing - which hopefully will reduce the need or any newAPI calls to euie the API to consume the youtube API again.
+- Focusing on the API getting as much useful info on 1st request from youtube API and sending this back for the client to pass on to db for storing - which hopefully will reduce the need or any newAPI calls to euie the API to consume the youtube API again.
+- initial setup return will work with timestamped links too, but always returns the clean "normalized link".
 
 ### TODO:
 
@@ -36,3 +37,5 @@ Turning free Youtube resources into trackable courses, similar to UDemy and Cour
     ```
 - Main point - on client side user can mark complete for already done courses too - unified logic. - DONE
 - consider if need to return a clean url with 2nd request. - NO NEED
+- CLIENT SIDE: User Option: Allowing users to choose between writing their own study plan or using the official description - adds flexibility and could save users time, especially if the official description is detailed and relevant.
+- CLIENT SIDE - NB - user might orshould have an option to update the link if need be - MIGHT BE BEST TO CONSUME DETAILS AGAIN FOR DATA INTEGRITY - POS ITERATION MAYBE
